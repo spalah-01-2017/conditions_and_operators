@@ -27,11 +27,11 @@ https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Operato
 ### Законы де Моргана
 
 * [информация по ним](https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B_%D0%B4%D0%B5_%D0%9C%D0%BE%D1%80%D0%B3%D0%B0%D0%BD%D0%B0) 
-* перепишите код в файле credit_example.html, заменив условие в else if с "логического и" на "логическое или", не нарушив работу кода ⭐
+* перепишите код в файле [credit_example.html](/credit_example.html), заменив условие в else if с "логического и" на "логическое или", не нарушив работу кода ⭐
 * опишите как можно подробнее, что происходит в 15 строке ⭐
 
 ===
-### Ознакомьтесь с кодом в файле prompt_alert_confirm.js. Проверьте, как он работает в консоли браузера.
+### Ознакомьтесь с кодом в файле [prompt_alert_confirm.js](/prompt_alert_confirm.js). Проверьте, как он работает в консоли браузера.
 
 ===
 ### Игра "Камень, ножницы, бумага" ⭐
