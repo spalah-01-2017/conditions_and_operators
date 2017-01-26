@@ -1,0 +1,40 @@
+@font-face
+    font-family: 'Font Awesome'
+    src: url('../fonts/FontAwesome.otf') format('truetype')
+    font-style: normal
+    font-weight: normal
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+#wrapper
+	position: relative
+	overflow: hidden
+	background: #b6cefe
+	font-family: 'Gloria Hallelujah'
+	color: #292929
+
+a
+	text-decoration: none
+	color: #fff
+	&:hover
+		opacity: 0.7
+
+ul
+	list-style-type: none
+
+.container
+	max-width: 1152px
+	margin: 0 auto
+
+.flex
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+
+.fl-wrap
+	@extend .flex
