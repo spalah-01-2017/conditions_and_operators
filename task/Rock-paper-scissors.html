@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Камень-ножницы-бумага</title>
+</head>
+
+<body>
+    <script>
+        var rss = function() {
+            var userHand = prompt("Камень-Ножницы-Бумага?");
+            var aiDrop = Math.random();
+            var aiHand = null;
+
+
+            if (userHand !== 'Камень' && userHand !== 'Ножницы' && userHand !== 'Бумага' && userHand !== null) {
+                alert("У нас тут не балаган а серьезное заведение! Введи корректный вариант");
+
+            } else if (userHand === null) {
+                alert("Отменено пользователем!");
+            }
+
+            if (aiDrop <= .33) {
+                aiHand = "Камень";
+            } else if (aiDrop > .33 && aiDrop < .66) {
+                aiHand = "Ножницы";
+            } else {
+                aiHand = "Бумага";
+            }
+
+            var advert = "Вы выкинули " + userHand + ", компьютер выкинул " + aiHand + ".";
+            var sameHand = "Ничья! Попробуйте еще раз";
+            var winner = "Вы победили";
+            var loser = "Вы проиграли";
+            console.log(advert);
+
+            if (userHand === aiHand) {
+                var resultMessage = alert(advert + " " + sameHand);
+                location.reload();
+            } else if ((userHand === "Камень" && aiHand === "Ножницы") || (userHand === "Бумага" && aiHand === "Камень") || (userHand === "Ножницы" && aiHand === "Бумага")) {
+                var resultMessage = alert(advert + " " + winner);
+            } else if (userHand === null) {
+                alert("Засчитано техническое поражение");
+            } else {
+                var resultMessage = alert(advert + " " + loser);
+            }
+        };
+        rss();
+    </script>
+</body>
+
+</html>
