@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Credit</title>
+</head>
+<body>
+    <script>
+        var CREDIT_SCORE_MIN = 70;
+        var CREDIT_SCORE_SUM_LIMIT = 200000;
+        var clientCreditScore = prompt('Введите кредитный балл:');
+        var clientCreditSum = prompt('Введите сумму кредита:');
+        var isValidScore = clientCreditScore >= CREDIT_SCORE_MIN;
+        var isValidSum = clientCreditSum <= CREDIT_SCORE_SUM_LIMIT;
+        var positiveDecisionText = 'Надежный клиент с кредитным баллом ' + clientCreditScore + '. Кредит на сумму ' + clientCreditSum + 'подтвержден.';
+        var negativeDecisionText = 'Ненадежный клиент с кредитным баллом ' + clientCreditScore + '. Заявка отклонена.';
+        var needConsiderationText = 'Заявка требует рассмотрения. Кредитный балл: ' + clientCreditScore + '. Запрошен кредит на сумму: ' + clientCreditSum + '.';
+        if(isValidScore && isValidSum) {
+            alert(positiveDecisionText);
+        } else if(isValidSum || isValidScore) {
+            alert(needConsiderationText);
+        } else {
+            alert(negativeDecisionText);
+        }
+    </script>
+</body>
+</html>
