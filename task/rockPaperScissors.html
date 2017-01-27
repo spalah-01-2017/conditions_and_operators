@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+
+<script>
+    const MIN = 0;
+    const MAX = 2;
+    const COMBINATIONS = [[0, 1, -1], [-1, 0, 1], [1, -1, 0]];
+    const OPTIONS = ['камень', 'ножницы', 'бумага'];
+    var programmArm = null;
+    var userArm = null;
+    var randNum = null;
+    var result = null;
+    programmArm = Math.round(Math.random()*(MAX - MIN) +MIN);
+    fromPrompt = prompt('Твой выбор', '');
+    if (fromPrompt == 'камень'){
+        userArm = 0;
+    } else if (fromPrompt == 'ножницы'){
+        userArm = 1;
+    } else if (fromPrompt == 'бумага'){
+        userArm = 2;
+    }
+    if (userArm){
+        var winText = 'Поздраляем, Вы выиграли. ' + OPTIONS[userArm] + ' против ' + OPTIONS[programmArm];
+        var drawText = 'Ничья, попробуйте еще раз. ' + OPTIONS[userArm] + ' против ' + OPTIONS[programmArm];
+        var lossText = 'Не Ваш день, попробуйте завтра. ' + OPTIONS[userArm] + ' против ' + OPTIONS[programmArm];
+        result = COMBINATIONS[userArm][programmArm];
+        if (result === 1){
+            alert(winText);
+        } else if (result === 0){
+            alert(drawText);
+        } else {
+            alert(lossText);
+        }
+    } else {
+        alert('Вы играете не по правилам');
+    }
+</script>
+
+</body>
+</html>
