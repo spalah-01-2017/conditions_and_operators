@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Игра "Камень, ножгици, бумага"</title>
+</head>
+<body>
+	
+<script>
+var option = null,
+
+random = Math.random(),
+
+userOption = prompt("Выберите один из вариантов:\n1. камень\n2. ножницы\n3. бумага","");
+
+
+if(random < 0.3){
+	option = "камень";
+	if(userOption == option){
+		alert("Ничья");
+	}else if(userOption == "ножницы"){
+		alert("Вы проиграли! :(\nУ меня \"камень\"");
+	}else if(userOption == "бумага"){
+		alert("Вы выиграли! :)\nУ меня \"камень\"");
+	}else{
+		alert("Вы не выбрали один из вариантов!");
+	}
+}else if(random < 0.6 && random > 0.3){
+	option = "ножницы";
+	if(userOption == option){
+		alert("Ничья");
+	}else if(userOption == "бумага"){
+		alert("Вы проиграли! :(\nУ меня \"ножницы\"");
+	}else if(userOption == "камень"){
+		alert("Вы выиграли! :)\nУ меня \"ножницы\"");
+	}else{
+		alert("Вы не выбрали один из вариантов!");
+	}
+}else{
+	option = "бумага";
+	if(userOption == option){
+		alert("Ничья");
+	}else if(userOption == "камень"){
+		alert("Вы проиграли! :(\nУ меня \"бумага\"");
+	}else if(userOption == "ножницы"){
+		alert("Вы выиграли! :)\nУ меня \"бумага\"");
+	}else{
+		alert("Вы не выбрали один из вариантов!");
+	}
+};
+
+</script>
+</body>
+</html>
