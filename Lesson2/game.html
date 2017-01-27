@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Game</title>
+</head>
+<body>
+	<script>
+		var userData = prompt("Камень, ножницы, бумага?", "").toLowerCase();
+
+		var machineData = null;
+
+		var programRandomChoice = Math.random();
+
+		if (programRandomChoice < 0.34) {
+			machineData = "камень";
+		} else if (programRandomChoice < 0.67) {
+			machineData = "ножницы";
+		} else {
+			machineData = "бумага";
+		}
+
+
+		if (userData === machineData) {
+			alert ("Верно!");
+		} else {
+			alert ("Не угадали!!");
+		}
+	</script>
+</body>
+</html>
