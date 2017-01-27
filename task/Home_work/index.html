@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/main.js"></script>
+	<script src="js/rockPaperScissors.js"></script>
+	<script src="js/deMorgan.js"></script>
 </head>
 <body>
 	<div id="wrappper">
@@ -12,5 +13,17 @@
 		<main id="main"></main>
 		<footer id="footer"></footer>
 	</div>
+	<script>
+		var userEntry = prompt('Введите');
+		if (userEntry.trim() === '') {
+			alert('Поле не должно быть пустым');
+		} else if (userEntry.length < 5) {
+			alert('Значение должно содержать не менее 5 символов');
+		} else if (userEntry !== userEntry.toLowerCase()) {
+			alert('Символы в верхнем регистре запрещены');
+		} else {
+			alert('Ввод успешный');
+		}
+	</script>
 </body>
 </html>
