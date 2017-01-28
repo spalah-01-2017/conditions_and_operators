@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chessBoard</title>
+</head>
+<body>
+<script>
+
+    var str = '', balance = null, size = 8;
+
+    for (var i = 0; i < size; i++){
+        balance = i%2;
+        for (var j = 0; j < size; j++){
+            if (j%2 == balance) {
+                str = str + '#';
+            } else {
+                str = str + ' ';
+            }
+            if (j == size - 1) str = str + '\n';
+        }
+    }
+
+    console.log(str);
+
+</script>
+</body>
+</html>

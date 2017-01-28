@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock, paper, scissors</title>
+</head>
+<body>
+<script>
+    var programChoice;
+    var drawMessage;
+    var isUserLooser;
+    var ROCK = 'камень';
+    var PAPER = 'бумага';
+    var SCISSORS = 'ножницы';
+
+    var userChoice = prompt('Камень, ножницы или бумага? Выбирай', ROCK).trim().toLowerCase();
+    //Error! 'trim' must by like this 'trim()'; Мазилла эту ошибку не показывает;
+
+    var rand = Math.floor(Math.random * 3);
+    if(rand = 1) {
+        programChoice = PAPER;
+    } else if (rand = 2) {
+        programChoice = SCISSORS;
+    } else {
+        programChoice = ROCK;
+    }
+    isUserLooser = !(userChoice === ROCK && programChoice === SCISSORS
+    || userChoice === PAPER && programChoice === ROCK
+    || userChoice === SCISSORS && programChoice === PAPER);
+    drawMessage = 'Ничья. Ты выбрал "' + userChoice + '", как и программа.';
+    oneWinnerMessage = (isUserLooser ? 'Проиграл' : 'Выиграл') + '. Ты выбрал "' + userChoice + '", а программа "' + programChoice + '".';
+    alert(userChoice === programChoice ? drawMessage : oneWinnerMessage);
+</script>
+</body>
+</html>

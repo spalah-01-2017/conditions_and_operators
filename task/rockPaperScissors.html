@@ -11,12 +11,11 @@
     const MAX = 2;
     const COMBINATIONS = [[0, 1, -1], [-1, 0, 1], [1, -1, 0]];
     const OPTIONS = ['камень', 'ножницы', 'бумага'];
-    var programmArm = null;
+    var programmArm = Math.round(Math.random()*(MAX - MIN) +MIN);
     var userArm = null;
-    var randNum = null;
     var result = null;
-    programmArm = Math.round(Math.random()*(MAX - MIN) +MIN);
-    fromPrompt = prompt('Твой выбор', '');
+    var fromPrompt = prompt('Твой выбор', '');
+
     if (fromPrompt == 'камень'){
         userArm = 0;
     } else if (fromPrompt == 'ножницы'){
@@ -24,7 +23,8 @@
     } else if (fromPrompt == 'бумага'){
         userArm = 2;
     }
-    if (userArm){
+
+    if (userArm !== null){
         var winText = 'Поздраляем, Вы выиграли. ' + OPTIONS[userArm] + ' против ' + OPTIONS[programmArm];
         var drawText = 'Ничья, попробуйте еще раз. ' + OPTIONS[userArm] + ' против ' + OPTIONS[programmArm];
         var lossText = 'Не Ваш день, попробуйте завтра. ' + OPTIONS[userArm] + ' против ' + OPTIONS[programmArm];
