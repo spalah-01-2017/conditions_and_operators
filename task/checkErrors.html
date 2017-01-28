@@ -13,11 +13,13 @@
     var PAPER = 'бумага';
     var SCISSORS = 'ножницы';
 
-    var userChoice = prompt('Камень, ножницы или бумага? Выбирай', ROCK).trim().toLowerCase();
-    //Error! 'trim' must by like this 'trim()'; Мазилла эту ошибку не показывает;
+    var userChoice = prompt('Камень, ножницы или бумага? Выбирай', ROCK).trim.toLowerCase();
+    //Error! 'trim' должно быть так 'trim()'; Мазилла эту ошибку не показывает;
 
     var rand = Math.floor(Math.random * 3);
-    if(rand = 1) {
+    //Error! 'Math.random' должно быть так 'Math.random()';
+
+    if(rand = 1) { // Программа всегда выбирает 'Бумагу', дальнейшие else if не выполняются;
         programChoice = PAPER;
     } else if (rand = 2) {
         programChoice = SCISSORS;
