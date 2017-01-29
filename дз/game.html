@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Камень, ножницы, бумага</title>
+	<script src='game.js'></script>
+</head>
+<body>
+	<select id='userChoice'>
+		<option value="2">Камень</option>
+		<option value="1">Ножницы</option>
+		<option value="0">Бумага</option>
+	</select>
+	<button onclick='play()'>Play</button>
+	<p>
+		Ваш выбор: <span id='lastUserChoice'></span>
+	</p>
+	<p>
+		Выбор противника: <span id='lastEnemyChoice'></span>
+	</p>
+	<p>
+		Результат: <span id='result'></span>
+	</p>
+	<p>
+		Победы: <span id='victories'>0</span>
+	</p>
+	<p>
+		Поражения: <span id='losses'>0</span>
+	</p>
+</body>
+</html>
