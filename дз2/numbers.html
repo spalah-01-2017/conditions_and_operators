@@ -1,0 +1,16 @@
+<script>
+	
+	number = prompt('введите число','');
+	maxNumber = 0;
+	while(number !== null){
+		if(+number != +number){
+			alert('Только числа!');
+		} else if(number > maxNumber){
+			maxNumber = number;
+		}
+		number = prompt('введите число','');
+	}
+	alert(maxNumber);
+
+
+</script>

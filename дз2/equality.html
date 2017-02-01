@@ -1,0 +1,7 @@
+<script>
+	var text = 'Вася купил новый телефон за $54,88';
+	var parsed = +text.substring(text.indexOf('$') + 1).replace(',','.');
+	if(parsed === 54.88){
+		alert('ok');
+	} // --> true
+</script>
