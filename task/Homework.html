@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+   <meta charset="UTF-8">
+   <title>Homework</title>  
+  </head> 
+  <body>
+    <script>
+    	var programRandomChoice = Math.random();
+    	var name = prompt("Введите одно из значений: камень, ножницы, бумага");
+   
+    
+		if (programRandomChoice <= 0.33 && name == "камень") {
+			alert('Ничья. У соперника тоже камень.');
+		}  else if(programRandomChoice > 0.33 && programRandomChoice <= 0.66 && name == "ножницы") {
+			alert('Ничья. У соперника тоже ножницы');
+		}  else if(programRandomChoice > 0.66 && programRandomChoice <= 1 && name == "бумага") {
+			alert('Ничья. У соперника тоже бумага');
+		} else if(programRandomChoice <= 0.33 && name == "ножницы") {
+			alert('Ты проиграл. У соперника камень.');
+		} else if(programRandomChoice <= 0.33 && name == "бумага") {
+			alert('Ты выиграл. У соперника камень.');
+		} else if(programRandomChoice > 0.33 && programRandomChoice <= 0.66 && name == "камень") {
+			alert('Ты выиграл. У соперника ножницы.');
+		} else if(programRandomChoice > 0.33 && programRandomChoice <= 0.66 && name == "бумага") {
+			alert('Ты проиграл. У соперника ножницы.');
+		}else if(programRandomChoice > 0.66 && programRandomChoice <= 1 && name == "камень") {
+			alert('Ты проиграл. У соперника бумага.');
+		} else if(programRandomChoice > 0.66 && programRandomChoice <= 1 && name == "ножницы") {
+			alert('Ты выиграл. У соперника бумага.');
+		} else {
+			alert('Введите корректное значение');
+		} 
+		
+    </script>
+  </body>
+</html>
