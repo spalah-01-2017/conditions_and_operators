@@ -1,51 +1,11 @@
-## Домашнее задание
-___
-### Условные операторы: if, '?'
+# RPSLS :fist: :hand: :v: :dragon: :alien:
 
-http://learn.javascript.ru/ifelse
-* желательно сделайте задания по этой ссылке или хотя бы изучите их решения
+[Rock Paper Scissors Lizard Spock](http://bigbangtheory.wikia.com/wiki/Rock_Paper_Scissors_Lizard_Spock) via JavaScript. JQuery and Bootstrap was used in this web application, also you can find some interesting thins there :wink:
 
-===
-### Взаимодействие с пользователем: alert, prompt, confirm
+Project you can find in my [repo](https://github.com/sorefull/rpsls)
 
-https://learn.javascript.ru/uibasic
-* ознакомьтесь с браузерными функциями
+![rules](http://www.had2know.com/images/rpssl-diagram.png)
 
-===
-### Таблица равенства
+Feel free to commit and fork!
 
-https://dorey.github.io/JavaScript-Equality-Table/
-* изучите вкладку "if()"
-
-===
-### Ассоциативность и приоритет операторов
-
-https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
-* рассмотрите только те операторы, которые вам уже знакомы (в дальнейшем эта таблица вам может пригодиться)
-
-===
-### Законы де Моргана
-
-* [информация по ним](https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B_%D0%B4%D0%B5_%D0%9C%D0%BE%D1%80%D0%B3%D0%B0%D0%BD%D0%B0) 
-* перепишите код в файле [credit_example.html](/credit_example.html), заменив условие в else if с "логического и" на "логическое или", не нарушив работу кода ⭐
-* опишите как можно подробнее, что происходит в [15 строке](/credit_example.html#L15) ⭐
-
-===
-### Ознакомьтесь с кодом в файле [prompt_alert_confirm.js](/prompt_alert_confirm.js). Проверьте, как он работает в консоли браузера.
-
-===
-### Игра "Камень, ножницы, бумага" ⭐
-
-Реализуйте игру "Камень, ножницы, бумага", используя правила со [страницы на Википедии](https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BC%D0%B5%D0%BD%D1%8C,_%D0%BD%D0%BE%D0%B6%D0%BD%D0%B8%D1%86%D1%8B,_%D0%B1%D1%83%D0%BC%D0%B0%D0%B3%D0%B0).
-_Что придется использовать:_
-    - Math.random() для получения случайного значения в пределах [0,1) (ознакомьтесь самостоятельно, используя информацию [отсюда](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
-    - условные выражения
-    - функцию prompt для получения ввода пользователя
-    - функцию alert для сообщения пользователю ответа программы
-
-Пользователь должен ввести данные ('камень', 'ножницы' или 'бумага') и пользовательское значение должно пройти проверку со значением, которое выбрала программа. Значение, которое выбрала программа, можно получать случайным образом. Пример можно посмотреть [здесь](https://jsfiddle.net/jimmy_ringo/epcqqmzL/) (для запуска нужно нажать 'Run' слева вверху страницы).
-
-_Вопросы и обсуждение по заданию приветсвуются в общем чате. Удачи :)_
-
-===
-⭐  - задания, помеченные звездочкой требуют проверки (не забудьте их взять с собой на следующее занятие)
+That's all, falks.
